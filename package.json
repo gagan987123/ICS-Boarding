@@ -1,0 +1,38 @@
+{
+  "name": "invenco-onboarding-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Comprehensive employee onboarding portal with React frontend and Node.js backend",
+  "scripts": {
+    "frontend:install": "cd frontend && npm install",
+    "backend:install": "cd backend && npm install",
+    "install:all": "npm run frontend:install && npm run backend:install",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:dev": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\"",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:build": "cd backend && npm run build",
+    "build": "npm run frontend:build && npm run backend:build"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/invenco-onboarding-portal.git"
+  },
+  "keywords": [
+    "onboarding",
+    "react",
+    "node",
+    "typescript",
+    "vite",
+    "tailwindcss"
+  ],
+  "author": "Invenco Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
