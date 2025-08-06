@@ -44,7 +44,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </p>
       
       {/* Employee status card with personalized information */}
-      <div className="bg-gray-900 border border-gray-700 rounded-lg p-6 mb-8 max-w-md transition-all duration-300 hover:bg-gray-800 hover:border-gray-600 hover:shadow-lg hover:shadow-gray-900/30">
+      <div className="bg-gray-950 border border-gray-600 rounded-lg p-6 mb-8 max-w-md transition-all duration-300 hover:bg-gray-800 hover:border-gray-500 hover:shadow-lg hover:shadow-gray-900/50">
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-lg font-semibold text-white">Welcome, {employeeName}!</h2>
           <span className={`px-3 py-1 rounded-full text-sm font-medium ${getOnboardingStatusColor(onboardingStatus)}`}>

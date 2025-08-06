@@ -43,11 +43,11 @@ const OrganizationalStructure = () => {
         <h2 className="text-2xl font-bold text-white mb-8 text-center">Your Team Structure</h2>
         
         {/* Simple Org Chart */}
-        <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
+        <div className="bg-gray-950 rounded-lg p-8 border border-gray-700">
           <div className="flex flex-col items-center space-y-4">
             {/* Department Head */}
             <div className="w-64 mb-6">
-              <div className="bg-gray-800 rounded-lg p-3 text-center border border-gray-700 transition-all duration-300 hover:bg-gray-700">
+              <div className="bg-gray-800 rounded-lg p-3 text-center border border-gray-600 transition-all duration-300 hover:bg-gray-700">
                 <div className="font-bold text-white mb-1">{departmentHead.name}</div>
                 <div className="text-xs text-gray-400">{departmentHead.title}</div>
               </div>
@@ -58,7 +58,7 @@ const OrganizationalStructure = () => {
             
             {/* Direct Manager */}
             <div className="w-64 mb-6">
-              <div className="bg-gray-800 rounded-lg p-3 text-center border border-gray-700 transition-all duration-300 hover:bg-gray-700">
+              <div className="bg-gray-800 rounded-lg p-3 text-center border border-gray-600 transition-all duration-300 hover:bg-gray-700">
                 <div className="font-bold text-white mb-1">{directManager.name}</div>
                 <div className="text-xs text-gray-400">{directManager.title}</div>
               </div>
@@ -84,7 +84,7 @@ const OrganizationalStructure = () => {
             {/* Team Members Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl">
               {teamMembers.map((member, index) => (
-                <div key={index} className="bg-gray-800 rounded-lg p-3 text-center border border-gray-700 transition-all duration-300 hover:bg-gray-700">
+                <div key={index} className="bg-gray-800 rounded-lg p-3 text-center border border-gray-600 transition-all duration-300 hover:bg-gray-700">
                   <div className="font-bold text-white text-sm mb-1">{member.name}</div>
                   <div className="text-xs text-gray-400">{member.role}</div>
                 </div>
